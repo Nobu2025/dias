@@ -1,9 +1,9 @@
 import java.util.Scanner;
 public class Dias{
     public static void main(String[] args){
-        Scanner numero1 = new Scanner(System.in);
+        Scanner almacenar = new Scanner(System.in);
         System.out.println("Escribe un numero");
-
+        int numero1 = almacenar.nextInt();
         if(numero1 == 1){
             System.out.println("hoy es lunes");
         }else if(numero1 == 2){
