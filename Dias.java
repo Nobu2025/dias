@@ -1,33 +1,32 @@
-import java.util.Scanner;
-public class Dias{
-    public static void main(String[] args){
-        Scanner almacenar = new Scanner(System.in);
-        System.out.println("Escribe un numero");
-        int numero1 = almacenar.nextInt();
-        if(numero1 == 1){
-            System.out.println("hoy es lunes");
-        }else if(numero1 == 2){
-            System.out.println("hoy es martes");
+import javax.swing.JOptionPane;
+public class Estaciones {
+    public static void main(String[] args) {
+        String opcionTexto = JOptionPane.showInputDialog("Ingresa un numero: ");
+            int opcion = Integer.parseInt(opcionTexto);
+            switch (opcion) {
+                case 12:
+                case 1:
+                case 2:
+                    System.out.println("Winter");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    System.out.println("Spring");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    System.out.println("Summer");
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    System.out.println("Autumn");
+                    break;
+                default:
+                    System.out.println("Invalid Month");
+            }
 
-        }else if(numero1 == 3){
-            System.out.println("hoy es miercoles");
-
-        }else if(numero1 == 4){
-            System.out.println("hoy es jueves");
-
-        }else if(numero1 == 5){
-            System.out.println("hoy es viernes");
-
-        }else if(numero1 == 6){
-            System.out.println("hoy es sabado");
-
-        }else if(numero1 == 7){
-            System.out.println("hoy es domingo");
-
-        }
     }
-   
-            
-            
-            
-    }
+}
